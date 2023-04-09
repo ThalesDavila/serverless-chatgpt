@@ -38,28 +38,5 @@ functions:
                       type: string
                     description: The list of todos.
 
-#  bye:
-#    isChatgptEndpoint: false
-#    handler: handler.hello
-#    events:
-#      - httpApi:
-#          method: GET
-#          path: /b
-#
-#  byebye:
-#    handler: handler.hello
-#    events:
-#      - httpApi:
-#          method: GET
-#          path: /bb
-#
-#  hello2:
-#    isChatgptEndpoint: true
-#    handler: handler.hello
-#    events:
-#      - httpApi:
-#          method: GET
-#          path: /hello2
-
 plugins:
   - ../lib/index.js
