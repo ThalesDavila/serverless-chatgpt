@@ -72,7 +72,7 @@ plugins:
   - serverless-chatgpt
 ```
 
-Please note there are needed parameters for this plugin to work. Besides that, many aren't but is suggested to add proper descriptions, email, and logo url.
+Please note at least one function with serverlessChatgptFunction parameters and serverlessChatgpt on custom are needed for this plugin to work. Besides that, many aren't but is suggested to add proper descriptions, email, and logo url.
 ## Usage
 The plugin will automatically set up the necessary resources and configuration files for your ChatGPT-based application. Deploy your service using the serverless command:
 
