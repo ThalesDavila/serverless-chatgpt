@@ -9,6 +9,7 @@ The Serverless ChatGPT Plugin makes it easy to create ChatGPT-based applications
 ## Limitations
 - Provider: the plugin only supports AWS as the cloud provider.
 - API Gateway custom URLs are not supported.
+- No auth configuration for chatgpt.
 If you need additional customization or support for other cloud providers, please open an issue, and we'll consider adding it based on the community's interest.
 
 ## Installation
