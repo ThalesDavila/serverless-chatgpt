@@ -1,0 +1,47 @@
+# Node.js dependencies
+node_modules/
+
+# Build artifacts
+dist/
+*.tgz
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Local environment variables
+.env
+.env.local
+
+# IDE files
+.vscode/
+*.sublime-project
+*.sublime-workspace
+.idea/
+
+# macOS files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Temporary files
+*.swp
+*.swo
+*.swn
+*.tmp
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+
+# Yarn
+.yarn-integrity
+.yarn-error.log
