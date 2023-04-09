@@ -28,17 +28,48 @@ To configure the plugin, add it to your serverless.yml file:
 
 ```yaml
 service: your-service-name
-provider:
-  name: aws
-  runtime: nodejs14.x
-  stage: dev
-  region: us-east-1
+provider: aws
+service: app
+
+custom:
+  serverlessChatgpt:
+    schemaVersion: string
+    nameForHuman: string
+    nameForModel: string
+    descriptionForHuman: string
+    descriptionForModel: string
+    apiUrl: string
+    logoUrl: string
+    contactEmail: string
+    legalInfoUrl: string
 
 functions:
-  # Your function configurations
+  hello:
+    handler: handler.hello
+    events:
+      - httpApi:
+          method: GET
+          path: /hello
+
+    serverlessChatgptFunction:
+      operationId: get from some aws id
+      summary: go to description
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  todos:
+                    type: array
+                    items:
+                      type: string
+                    description: The list of todos.
 
 plugins:
-  - serverless-chatgpt-plugin
+  - serverless-chatgpt
 ```
 
 Please note there are needed parameters for this plugin to work. Besides that, many aren't but is suggested to add proper descriptions, email, and logo url.
