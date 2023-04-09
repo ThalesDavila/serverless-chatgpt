@@ -45,3 +45,6 @@ ehthumbs_vista.db
 # Yarn
 .yarn-integrity
 .yarn-error.log
+
+# Serverless framework
+.serverless
