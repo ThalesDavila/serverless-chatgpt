@@ -1,0 +1,24 @@
+{
+  "name": "serverless-gpt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "sls deploy --stage dev --region us-east-1",
+    "package": "sls package",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Thales Davila",
+  "license": "LGPL-3.0",
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "esm": "^3.2.25",
+    "js-yaml": "^4.1.0",
+    "serverless-plugin-typescript": "^2.1.4"
+  }
+}
