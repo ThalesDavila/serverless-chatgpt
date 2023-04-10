@@ -1,4 +1,4 @@
-Please note it's in development. So, don't use for production yet.
+> :warning: **It's in development**. Please don't use for production yet.
 
 # Serverless ChatGPT Plugin Banner
 The Serverless ChatGPT Plugin makes it easy to create ChatGPT-based applications with minimal configuration. The plugin takes care of setting up the necessary configuration files and resources required by OpenAI, allowing you to focus on building engaging conversational experiences.
