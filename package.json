@@ -8,7 +8,13 @@
     "package": "sls package",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "chatgpt",
+    "serverless",
+    "serverless framework",
+    "serverless plugin",
+    "chatgpt plugin"
+  ],
   "author": "Thales Davila",
   "license": "LGPL-3.0",
   "devDependencies": {
