@@ -1,12 +1,16 @@
 {
   "name": "serverless-chatgpt",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "",
   "main": "index.js",
   "scripts": {
     "deploy": "sls deploy --stage dev --region us-east-1",
     "package": "sls package",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "exports": {
+    ".": "./lib/index.js",
+    "./lambda": "./lib/lambda/index.js"
   },
   "keywords": [
     "chatgpt",
