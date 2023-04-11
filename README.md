@@ -32,7 +32,6 @@ To configure the plugin, add it to your serverless.yml file:
 ```yaml
 service: your-service-name
 provider: aws
-service: app
 
 custom:
   serverlessChatgpt:
