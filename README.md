@@ -81,7 +81,8 @@ The plugin will automatically set up the necessary resources and configuration f
 ```bash
 serverless deploy
 ```
-The Serverless Framework will take care of the deployment process, and the ChatGPT integration will be ready to use.
+The Serverless Framework will take care of the deployment process, and the ChatGPT integration will be ready to be configured on ChatGPT website. 
+For more information about that configuration and ChatGPT plugin rules, see the [ChatGPT Plugins Documentation](https://platform.openai.com/docs/plugins/introduction)
 
 ## Contributing
 Contributions to the Serverless ChatGPT Plugin are welcome! To contribute, please follow these steps:
@@ -93,7 +94,7 @@ Contributions to the Serverless ChatGPT Plugin are welcome! To contribute, pleas
 - Please make sure your changes follow our coding guidelines and include tests if applicable.
 
 ## License
-This project is licensed under the LGPL-3.0 License. Please see the LICENSE file for more information.
+This project is licensed under the LGPL-3.0 License.
 
 ## Support
 If you encounter any issues or have questions about the Serverless ChatGPT Plugin, please open an issue on our GitHub repository or contact the maintainers.
