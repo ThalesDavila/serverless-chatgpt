@@ -1,10 +1,13 @@
 > :warning: **It's in development**. Please don't use for production yet.
 
+![npm](https://img.shields.io/npm/dt/serverless-chatgpt)
+
 # Serverless ChatGPT Plugin
 The Serverless ChatGPT Plugin makes it easy to create ChatGPT-based applications with minimal configuration. The plugin takes care of setting up the necessary configuration files and resources required by OpenAI, allowing you to focus on building engaging conversational experiences.
 
 ## Local File Serving
 Our Serverless plugin now supports serving local files required by ChatGPT, facilitating quick integration with OpenAI on localhost.
+We are working on getting the serverless.yaml data then creating those files for local serving(the same that is already done on deploy).
 
 ### Usage
 First, place the following files in your project's /public directory:
