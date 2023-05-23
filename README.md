@@ -7,7 +7,7 @@
 # Serverless ChatGPT Plugin
 The Serverless ChatGPT Plugin makes it easy to create ChatGPT-based applications with minimal configuration. The plugin takes care of setting up the necessary configuration files and resources required by OpenAI, allowing you to focus on building engaging conversational experiences.
 
-![](../../../../../var/folders/wf/04c4w1j51jb_8kvyd7s9k4vh0000gq/T/TemporaryItems/NSIRD_screencaptureui_notXHR/Screen Shot 2023-05-22 at 23.00.47.png)
+![](public/vennDiagram.png)
 
 ### Local File Serving
 Our Serverless plugin now supports serving local files required by ChatGPT, facilitating quick integration with OpenAI on localhost.
