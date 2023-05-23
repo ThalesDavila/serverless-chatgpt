@@ -21,7 +21,7 @@ functions:
           method: GET
           path: /todo
 
-    serverlessChatgptFunction:
+    serverlessChatgptApi:
       operationId: get from some aws id
       summary: go to description
       responses:

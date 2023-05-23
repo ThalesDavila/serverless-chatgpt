@@ -17,18 +17,30 @@
     "serverless",
     "serverless framework",
     "serverless plugin",
-    "chatgpt plugin"
+    "chatgpt plugin",
+    "openai",
+    "aws",
+    "api-gateway",
+    "s3",
+    "conversational-ai",
+    "nlp",
+    "deployment",
+    "automation",
+    "chatbot",
+    "serverless-offline"
   ],
   "author": "Thales Davila",
-  "license": "LGPL-3.0",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/ThalesDavila/serverless-chatgpt.git"
   },
   "dependencies": {
     "ajv": "^8.12.0",
+    "aws-sdk": "^2.1381.0",
     "esm": "^3.2.25",
     "js-yaml": "^4.1.0",
+    "serverless-apigateway-service-proxy": "^2.2.1",
     "tmp": "^0.2.1"
   }
 }
