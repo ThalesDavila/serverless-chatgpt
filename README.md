@@ -11,13 +11,10 @@ The Serverless ChatGPT Plugin makes it easy to create ChatGPT-based applications
 
 ### Local File Serving
 Our Serverless plugin now supports serving local files required by ChatGPT, facilitating quick integration with OpenAI on localhost.
-We are working on getting the serverless.yaml data then creating those files for local serving(the same that is already done on deploy).
 
 ### Usage
-First, place the following files in your project's /public directory:
+First, place the following file in your project's /.well-known directory:
 - logo.png: Your service's logo.
-- manifest.json: Configuration for the ChatGPT plugin.
-- openapi.yaml: Your service's API specification.
 
 ### How it works
 The serverless-chatgpt plugin automates the creation of OpenAI ChatGPT plugins, generating necessary files and creating a compliant Lambda function. It can be configured to work locally with serverless-offline, allowing for easy testing and debugging.
@@ -32,10 +29,10 @@ plugins:
 
 Run your Serverless application in offline mode (```sls offline```). The plugin will automatically serve these files at their respective endpoints.
 
-The endpoints will be:
+The endpoint will be /.well-known/{name}. This endpoint will serve the files required for the chatgpt integration:
 - /.well-known/ai-plugin.json
-- /public/openapi.yaml
-- /public/logo.png
+- /.well-known/openapi.yaml
+- /.well-known/logo.png
 
 > :information_source: This feature is particularly useful for testing your OpenAI integration locally before deploying to a live environment.
 
