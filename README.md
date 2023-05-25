@@ -72,7 +72,7 @@ custom:
   serverlessChatgpt:
     schema_version: v1
     name_for_human: Hello Serverless Chatgpt
-    name_for_model: Hello Serverless Chatgpt
+    name_for_model: HelloServerlessChatgpt
     description_for_human: Hello Serverless Chatgpt
     description_for_model: Hello Serverless Chatgpt
     auth:
