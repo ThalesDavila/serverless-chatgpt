@@ -12,9 +12,9 @@ The Serverless ChatGPT Plugin makes it easy to create ChatGPT-based applications
 ### Local File Serving
 Our Serverless plugin now supports serving local files required by ChatGPT, facilitating quick integration with OpenAI on localhost.
 
-### Usage
-First, place the following file in your project's /.well-known directory:
-- logo.png: Your service's logo.
+## Usage
+Use the <a href="https://github.com/ThalesDavila/serverless-chatgpt-template" target="_blank">serverless-chatgpt-template</a> GitHub template.
+Then, you can just start coding! 
 
 ### How it works
 The serverless-chatgpt plugin automates the creation of OpenAI ChatGPT plugins, generating necessary files and creating a compliant Lambda function. It can be configured to work locally with serverless-offline, allowing for easy testing and debugging.
@@ -45,80 +45,6 @@ The endpoint will be /.well-known/{name}. This endpoint will serve the files req
 - Provider: the plugin only supports AWS as the cloud provider.
 - No auth configuration for chatgpt.
 If you need additional customization or support for other cloud providers, please open an issue, and we'll consider adding it based on the community's interest.
-
-## Installation
-First, install the Serverless Framework if you haven't already:
-
-```bash
-npm install -g serverless
-```
-
-Next, install the Serverless ChatGPT Plugin in your project:
-```bash
-npm install --save serverless-chatgpt-plugin
-```
-
-Configuration
-To configure the plugin, add it to your serverless.yml file:
-
-```yaml
-service: hello-world
-
-provider:
-  name: aws
-  runtime: nodejs14.x
-
-custom:
-  serverlessChatgpt:
-    schema_version: v1
-    name_for_human: Hello Serverless Chatgpt
-    name_for_model: HelloServerlessChatgpt
-    description_for_human: Hello Serverless Chatgpt
-    description_for_model: Hello Serverless Chatgpt
-    auth:
-      type: none
-    api:
-      type: openapi
-    contact_email: your@email.com
-    legal_info_url: http://www.example.com/legal
-
-functions:
-  hello:
-    handler: handler.hello
-    events:
-      - httpApi:
-          method: GET
-          path: /hello
-    serverlessChatgptFunction:
-      operationId: 'helloWorld'
-      summary: 'Returns a Hello World message.'
-      responses:
-        '200':
-          description: 'OK'
-          content:
-            application/json:
-              schema:
-                type: object
-                properties:
-                  message:
-                    type: string
-                    description: 'The Hello World message.'
-
-plugins:
-  - serverless-offline
-  - serverless-chatgpt
-
-```
-
-Please note at least one function with serverlessChatgptApi parameters and serverlessChatgpt on custom are needed for this plugin to work. Besides that, many aren't but is suggested to add proper descriptions, email, and logo url.
-## Usage
-The plugin will automatically set up the necessary resources and configuration files for your ChatGPT-based application. Deploy your service using the serverless command:
-
-```bash
-serverless deploy
-```
-The Serverless Framework will take care of the deployment process, and the ChatGPT integration will be ready to be configured on ChatGPT website. 
-For more information about that configuration and ChatGPT plugin rules, see the [ChatGPT Plugins Documentation](https://platform.openai.com/docs/plugins/introduction)
 
 ## Contributing
 Contributions to the Serverless ChatGPT Plugin are welcome! To contribute, please follow these steps:
