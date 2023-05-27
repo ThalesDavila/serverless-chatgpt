@@ -1,6 +1,6 @@
 {
   "name": "serverless-chatgpt",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -37,7 +37,6 @@
   },
   "dependencies": {
     "ajv": "^8.12.0",
-    "aws-sdk": "^2.1381.0",
     "esm": "^3.2.25",
     "js-yaml": "^4.1.0",
     "tmp": "^0.2.1"
